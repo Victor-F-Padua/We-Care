@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    margin: 30px 70px;
+}
+
+a{
+    color: #989D9C;
+    font-size: 25px;
+    padding-right: 30px;
+}
+
+.button-header{
+    background: #665AE1;
+    color: #FFFFFF;
+    font-size: 25px;
+    border: none;
+    border-radius: 25px;
+    width: 120px;
+    height: 40px;
+}
+
+img{
+    width: 500px;
+    margin: 100px;
+}
+
+.container {
+    display: inline-block;
+    width: 700px;
+    position: relative;
+    top: -190px;
+    
+}
+
+h1 {
+    font-weight: 1000;
+    font-size: 100px;
+    color: #515151;
+
+}
+
+h2 {
+    color: #515151;
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+p {
+    color: #848484;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.button-container {
+    background: #ADFF00;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    width: 180px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+a:hover, .button-header:hover, .button-container:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+ .button-header:active, .button-container:active {
+    transform: scale(0.8);
+}
+
+a:active{
+    color: #000000;
+}
+
+@media screen and (max-width: 1450px) {
+    .container {
+        top: 20px;
+         display: block;
+    margin: 20px auto;
+    }
+
+    img {
+    display: block;
+    margin: 20px auto; /* auto na lateral = centrado horizontalmente */
+    width: 400px;
+}
+
+    header{
+         display: block;
+    margin: 20px auto; /* auto na lateral = centrado horizontalmente */
+        width: fit-content;
+    }
+
+        .button-container {
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto ;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    
+    .container {
+      display: block;
+    margin: 20px auto; /* auto na lateral = centrado horizontalmente */
+        width: fit-content;
+    }
+    
+    h1 {
+      font-size: 70px;
+    }
+
+    h2 {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      display: none;
+    }
+
+    .button-container {
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+        display: block;
+        margin: 0 auto ;
+    }
+
+    img {
+        width: 400px;
+    }
+
+    header{ 
+        display: none;
+    }
+}
